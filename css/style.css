@@ -4,7 +4,7 @@
     /* min-height: 2rem; */
 }
 .control{
-    border: 2px dashed greenyellow;
+    /* border: 2px dashed greenyellow; */
     min-height: 2rem;
 }
 .sese{
@@ -41,7 +41,9 @@ input{
 .bg-blue{
     background: #1C71E8;
 }
-
+.bg-badje{
+    background: #155BBA;
+}
 /**************************** colori ************************/
 
 .white{

@@ -12,15 +12,15 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-3">
+    <nav class="navbar navbar-expand bg-body-tertiary px-3">
         <a class="navbar-brand" href="#">
             <img src="img/logo.svg" alt="">
         </a>
-        <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2 " type=" search" placeholder="&#127859 Prova a cercare Lezioni di Laravel" aria-label="Search">
         <div class="d-flex gap-3">
-            <i class="fa-solid fa-list-ul"></i>
-            <i class="fa-solid fa-circle-question"></i>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <i class="d-none d-sm-inline fa-solid fa-list-ul"></i>
+            <i class="d-none d-sm-inline fa-solid fa-circle-question"></i>
+            <i class="d-none d-sm-inline fa-solid fa-ellipsis-vertical"></i>
             <i class="fa-solid fa-bell" style="color: #ff8c00;"></i>
         </div>
     </nav>
@@ -28,33 +28,63 @@
         <!-- sidebar -->
         <div id="toolbar" class="d-flex flex-column p-4">     
                 <div class="text-nowrap">
-                    <i class="fa-solid fa-house mb-3 debug" style="width: 30px;"></i>
-                    <span class="m-1 debug">Home</span>
+                    <i class="fa-solid text-center fa-house mb-3 debug" style="width: 30px;"></i>
+                    <span class="d-none  d-lg-inline m-1 debug">Home</span>
                 </div>
                 <div class="text-nowrap">
-                    <i class="fa-solid fa-magnifying-glass mb-3 debug" style="width: 30px;"></i>
-                    <span class="m-1 debug">stats</span>
+                    <i class="fa-solid text-center fa-magnifying-glass mb-3 debug" style="width: 30px;"></i>
+                    <span class="d-none  d-lg-inline m-1 debug">stats</span>
                 </div>
                 <div class="mb-auto text-nowrap">
-                    <i class="fa-solid fa-lines-leaning mb-3 debug" style="width: 30px;"></i>
-                    <span class="m-1 debug">signals</span>
+                    <i class="fa-solid text-center fa-lines-leaning mb-3 debug" style="width: 30px;"></i>
+                    <span class="d-none  d-lg-inline m-1 debug">signals</span>
                 </div>
                 <div class="text-nowrap">
-                    <i class="fa-solid fa-gear mb-3 debug" style="width: 30px;"></i>
-                    <span class="m-1 debug">Admin</span>
+                    <i class="fa-solid text-center fa-gear mb-3 debug" style="width: 30px;"></i>
+                    <span class="d-none  d-lg-inline m-1 debug">Admin</span>
                 </div>
         </div>
-        <!-- main -->
+<!------------------------------------------ main ---------------------------->
         <div class="container-fluid debug overflow-auto">
-            <div class="row bg-blue">
-                <div class="col-6 control"></div>
-                <div class="col-4 control"></div>
-                <div class="col-2 control"></div>
+                        <!-- striscia blu -->
+            <div class="row bg-blue white">
+                <!-- sx -->
+                <div class="col-12 col-sm-4 col-lg-6 p-2 control">
+                    <div class="fs-3 d-inline">Boolean</div>
+                    <span class="badge rounded-pill bg-badje">piano blaze</span>
+                    <p>
+                        <span class="badge rounded-pill bg-badje">3 app</span>
+                        <i class="fa-solid fa-angles-right"></i>
+                        <span class="badge rounded-pill bg-badje d-none d-lg-inline">Boolean mobile app</span>
+                        <span class="badge rounded-pill bg-badje d-none d-lg-inline">Boolean web app</span>
+                        <span class="badge rounded-pill bg-badje d-none d-lg-inline">Boolean big app</span>
+                        <span class="badge rounded-pill bg-badje d-inline d-lg-none">+</span>
+                    </p>
+                </div>
+                <!-- mid -->
+                <div class="col-12 col-sm-4 col-lg-4 p-3 control">
+                    <div>Studenti online negli ultimi 30 minuti</div>
+                    <div class="fs-3">125</div>
+                </div>
+                <!-- dx -->
+                <div class="col-12 col-sm-4 col-lg-2 pt-3 pb-3 control">
+                    <span>Nuovo studente</span>
+                    <button class="btn btn-outline-light mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        ...
+                      </div>
+                    </div>
+                </div>
             </div>
 <!----------------- contenuto ----------------------->
             <div class="row">
                 <!-- sx -->
-                <div class="col-8 control">
+                <div class="col-12 col-lg-8 control">
                     <!-- prossime classi -->
                     <div class="card mt-4" style="width: 100%;">
                         <div class="card-header fs-3 fw-normal">
@@ -64,20 +94,35 @@
                             <thead>
                               <tr>
                                 <td style="width: 50%;">Nome</td>
-                                <td class="text-center">Data inizio</td>
-                                <td class="text-center">ROI</td>
-                                <td class="text-center">Stato</td>
-                                <td class="text-center">Azioni</td>
+                                <td class="text-center text-nowrap d-none d-sm-table-cell debug">Data inizio</td>
+                                <td class="text-center text-nowrap d-none d-sm-table-cell debug">ROI</td>
+                                <td class="text-center text-nowrap debug">Stato</td>
+                                <td class="text-center text-nowrap debug">Azioni</td>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 75
+                                     Classe 75
                                 </td>
-                                <td class="text-center">15 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center text-nowrap debug d-none d-sm-table-cell">15 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
+                                <td class="text-center">
+                                    <span class="badge text-bg-success">Done</span>
+                                </td>
+                                <td class="text-center text-nowrap debug">
+                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                    <img src="img/class-avatar.png" class="px-1">
+                                     Classe 76
+                                </td>
+                                <td class="text-center d-none d-sm-table-cell">16 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-success">Done</span>
                                 </td>
@@ -89,25 +134,10 @@
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 76
+                                     Classe 77
                                 </td>
-                                <td class="text-center">16 Feb 2021</td>
-                                <td class="text-center">20%</td>
-                                <td class="text-center">
-                                    <span class="badge text-bg-success">Done</span>
-                                </td>
-                                <td class="text-center">
-                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                    <img src="img/class-avatar.png" class="px-1">
-                                    Classe 77
-                                </td>
-                                <td class="text-center">17 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center d-none d-sm-table-cell">17 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-warning">Process</span>
                                 </td>
@@ -119,10 +149,10 @@
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 78
+                                     Classe 78
                                 </td>
-                                <td class="text-center">18 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center d-none d-sm-table-cell">18 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-success">Done</span>
                                 </td>
@@ -134,10 +164,10 @@
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 79
+                                     Classe 79
                                 </td>
-                                <td class="text-center">19 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center d-none d-sm-table-cell">19 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-danger">failed</span>
                                 </td>
@@ -149,10 +179,10 @@
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 80
+                                     Classe 80
                                 </td>
-                                <td class="text-center">20 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center d-none d-sm-table-cell">20 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-success">Done</span>
                                 </td>
@@ -164,10 +194,10 @@
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 81
+                                     Classe 81
                                 </td>
-                                <td class="text-center">21 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center d-none d-sm-table-cell">21 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-danger">failed</span>
                                 </td>
@@ -179,10 +209,10 @@
                               <tr>
                                 <td>
                                     <img src="img/class-avatar.png" class="px-1">
-                                    Classe 82
+                                     Classe 82
                                 </td>
-                                <td class="text-center">22 Feb 2021</td>
-                                <td class="text-center">20%</td>
+                                <td class="text-center d-none d-sm-table-cell">22 Feb 2021</td>
+                                <td class="text-center d-none d-sm-table-cell">20%</td>
                                 <td class="text-center">
                                     <span class="badge text-bg-success">Done</span>
                                 </td>
@@ -234,7 +264,7 @@
                       </div>
                 </div>
                 <!-- dx -->
-                <div class="col-4 control">
+                <div class="col-12 col-lg-4 control">
                     <!-- to do -->
                     <div class="card mt-4">
                         <div class="card-header fs-3 fw-normal">
