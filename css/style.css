@@ -1,10 +1,11 @@
 
 .debug{
-    border: 2px dashed red;
-    min-height: 2rem;
+    /* border: 2px dashed red; */
+    /* min-height: 2rem; */
 }
 .control{
     border: 2px dashed greenyellow;
+    min-height: 2rem;
 }
 .sese{
     width: 80px;
@@ -26,6 +27,23 @@ nav{
 #toolbar{
     background-color: #051E34;
     color: white;
-    width: 150px;
+    /* width: 150px; */
     height: 100%;
+}
+
+input{
+    margin-right: 5px;
+}
+
+
+
+/**************************** backgrouds ************************/
+.bg-blue{
+    background: #1C71E8;
+}
+
+/**************************** colori ************************/
+
+.white{
+    color: white;
 }
