@@ -4,8 +4,8 @@
     /* min-height: 2rem; */
 }
 .control{
-    /* border: 2px dashed greenyellow; */
-    min-height: 2rem;
+    /* border: 2px dashed  ;greenyellow; */
+    /* min-height: 2rem; */
 }
 .sese{
     width: 80px;
@@ -23,6 +23,9 @@ nav{
     
 }
 
+#toolbar div:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+}
 
 #toolbar{
     background-color: #051E34;
@@ -43,6 +46,9 @@ input{
 }
 .bg-badje{
     background: #155BBA;
+}
+.bg-white{
+    background-color: white;
 }
 /**************************** colori ************************/
 

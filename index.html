@@ -27,26 +27,26 @@
     <div class="pag d-flex ">
         <!-- sidebar -->
         <div id="toolbar" class="d-flex flex-column p-4">     
-                <div class="text-nowrap">
-                    <i class="fa-solid text-center fa-house mb-3 debug" style="width: 30px;"></i>
-                    <span class="d-none  d-lg-inline m-1 debug">Home</span>
+                <div class="text-nowrap my-1 d-flex align-items-center control">
+                    <i class="fa-solid text-center fa-house debug" style="width: 30px;"></i>
+                    <span class="d-none d-lg-inline m-1 debug">Home</span>
                 </div>
-                <div class="text-nowrap">
-                    <i class="fa-solid text-center fa-magnifying-glass mb-3 debug" style="width: 30px;"></i>
-                    <span class="d-none  d-lg-inline m-1 debug">stats</span>
+                <div class="text-nowrap my-1 d-flex align-items-center control">
+                    <i class="fa-solid text-center fa-magnifying-glass debug" style="width: 30px;"></i>
+                    <span class="d-none d-lg-inline m-1 debug">stats</span>
                 </div>
-                <div class="mb-auto text-nowrap">
-                    <i class="fa-solid text-center fa-lines-leaning mb-3 debug" style="width: 30px;"></i>
+                <div class="mb-auto text-nowrap my-1 d-flex align-items-center control">
+                    <i class="fa-solid text-center fa-lines-leaning debug" style="width: 30px;"></i>
                     <span class="d-none  d-lg-inline m-1 debug">signals</span>
                 </div>
-                <div class="text-nowrap">
-                    <i class="fa-solid text-center fa-gear mb-3 debug" style="width: 30px;"></i>
-                    <span class="d-none  d-lg-inline m-1 debug">Admin</span>
+                <div class="text-nowrap my-1 d-flex align-items-center control">
+                    <i class="fa-solid text-center fa-gear debug" style="width: 30px;"></i>
+                    <span class="d-none d-lg-inline m-1 debug">Admin</span>
                 </div>
         </div>
-<!------------------------------------------ main ---------------------------->
+<!------------------------------------------ main --------------------------------------->
         <div class="container-fluid debug overflow-auto">
-                        <!-- striscia blu -->
+            <!--ooooooooooooooo striscia blu ooooooooooooooooo-->
             <div class="row bg-blue white">
                 <!-- sx -->
                 <div class="col-12 col-sm-4 col-lg-6 p-2 control">
@@ -69,19 +69,86 @@
                 <!-- dx -->
                 <div class="col-12 col-sm-4 col-lg-2 pt-3 pb-3 control">
                     <span>Nuovo studente</span>
+                    <!-- offcanvas -->
                     <button class="btn btn-outline-light mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 600px;">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
                       <div class="offcanvas-body">
-                        ...
+                        <div class="row debug">
+                            <div class="col-12 col-sm-6 control py-2">
+                                <div class="py-2 fw-semibold">Nome</div>
+                                <input class="form-control" type="text" aria-label="default input example">
+                            </div>
+                            <div class="col-12 col-sm-6 control py-2">
+                                <div class="py-2 fw-semibold">Cognome</div>
+                                <input class="form-control" type="text" aria-label="default input example">
+                            </div>
+                            <div class="col-12 col-sm-6 control py-2">
+                                <div class="py-2 fw-semibold">Email</div>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="col-12 col-sm-6 control py-2">
+                                <div class="py-2 fw-semibold">Password</div>
+                                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-12 col-sm-6 control py-2">
+                                <div class="py-2 fw-semibold">Conferma Email</div>
+                                <input type="email" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                            <div class="col-12 col-sm-6 control py-2">
+                                <div class="py-2 fw-semibold">Conferma Password</div>
+                                <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-12 control">
+                                <div class="py-2 fw-semibold">Indirizzo</div>
+                                <input class="form-control" type="text" aria-label="default input example">
+                            </div>
+                            <div class="col-12 col-sm-6 control">
+                                <div class="py-2 fw-semibold">Citta</div>
+                                <input class="form-control" type="text" aria-label="default input example">
+                            </div>
+                            <div class="col-12 col-sm-4 control">
+                                <div class="py-2 fw-semibold">Regione</div>
+                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                    <datalist id="datalistOptions">
+                                        <option value="Livorno">
+                                        <option value="Irpef">
+                                        <option value="Genova">
+                                        <option value="Milano">
+                                        <option value="Ancona">
+                                        <option value="Brennero">
+                                        <option value="Aosta">
+                                        <option value="Lucca">
+                                        <option value="Lecce">
+                                        <option value="Salerno">
+                                    </datalist>
+                            </div>
+                            <div class="col-12 col-sm-2 control">
+                                <div class="py-2 fw-semibold">CAP</div>
+                                <input class="form-control" type="text" aria-label="default input example">
+                            </div>
+                            <div class="col-12 control">
+                                <div class="py-2 fw-semibold">Foto</div>
+                                <input class="form-control" type="file" id="formFile">
+                            </div>
+                            <div class="col-12 py-2 mt-3">
+                                <input type="checkbox">Accetto i termini e i condizionatori
+                            </div>
+                            <div class="col-12 py-2">
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                            </div>
+
+                            
+                        </div>
                       </div>
                     </div>
                 </div>
             </div>
-<!----------------- contenuto ----------------------->
+<!-------------ooooooooooooooo contenuto oooooooooooooooooo---------------->
             <div class="row">
                 <!-- sx -->
                 <div class="col-12 col-lg-8 control">
@@ -224,7 +291,7 @@
                             </tbody>
                           </table>
                       </div>
-                      <!-- ffffaaaaqqqq -->
+                      <!--oooooooooooo ffffaaaaqqqq oooooooooooo-->
                       <div class="card mt-4" style="width: 100%;">
                         <div class="card-header fs-3 fw-normal">
                           F.A.Q.
@@ -263,7 +330,7 @@
                           </div>
                       </div>
                 </div>
-                <!-- dx -->
+                <!--oooooooooooo COLONA DX oooooooooooooooo-->
                 <div class="col-12 col-lg-4 control">
                     <!-- to do -->
                     <div class="card mt-4">
