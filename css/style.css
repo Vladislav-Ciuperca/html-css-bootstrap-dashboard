@@ -1,57 +1,55 @@
-
-.debug{
-    /* border: 2px dashed red; */
-    /* min-height: 2rem; */
-}
-.control{
-    /* border: 2px dashed  ;greenyellow; */
-    /* min-height: 2rem; */
-}
-.sese{
+.sese {
     width: 80px;
 }
-nav{
+
+nav {
     width: 100%;
     height: 70px;
     padding: 1rem;
     background-color: aquamarine;
 }
 
-.pag{
-    /* border: 2px dashed greenyellow; */
+.card-body {
+    padding-bottom: 3px !important;
+}
+
+.pag {
     height: calc(100vh - 70px);
-    
+
 }
 
-#toolbar div:hover{
-    background-color: rgba(255, 255, 255, 0.253);
+#toolbar div:hover {
+    /* background-color: rgba(255, 255, 255, 0.253); */
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-#toolbar{
+#toolbar {
     background-color: #051E34;
+    background-image: url("../img/sidebar-bg.png");
     color: white;
-    /* width: 150px; */
     height: 100%;
 }
 
-input{
+input {
     margin-right: 5px;
 }
 
-
-
 /**************************** backgrouds ************************/
-.bg-blue{
+.bg-blue {
     background: #1C71E8;
 }
-.bg-badje{
+
+.bg-badje {
     background: #155BBA;
 }
-.bg-white{
+
+.bg-white {
     background-color: white;
 }
+
 /**************************** colori ************************/
 
-.white{
+.white {
     color: white;
 }
